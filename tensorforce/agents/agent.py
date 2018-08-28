@@ -44,14 +44,14 @@ class Agent(object):
         Args:
             states (spec, or dict of specs): States specification, with the following attributes
                 (required):
-                - type: one of 'bool', 'int', 'float' (default: 'float').
-                - shape: integer, or list/tuple of integers (required).
+                * ``type: one of 'bool', 'int', 'float' (default: 'float').``
+                * ``shape: integer, or list/tuple of integers (required).``
             actions (spec, or dict of specs): Actions specification, with the following attributes
                 (required):
-                - type: one of 'bool', 'int', 'float' (required).
-                - shape: integer, or list/tuple of integers (default: []).
-                - num_actions: integer (required if type == 'int').
-                - min_value and max_value: float (optional if type == 'float', default: none).
+                - ``type: one of 'bool', 'int', 'float' (required).``
+                - ``shape: integer, or list/tuple of integers (default: []).``
+                - ``num_actions: integer (required if type == 'int').``
+                - ``min_value and max_value: float (optional if type == 'float', default: none).``
             batched_observe (bool): Specifies whether calls to model.observe() are batched, for
                 improved performance (default: true).
             batching_capacity (int): Batching capacity of agent and model (default: 1000).
